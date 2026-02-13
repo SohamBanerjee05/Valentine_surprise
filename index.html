@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+
+<!-- FULLSCREEN OVERLAY -->
+<div id="overlay" class="overlay hidden">
+    <img id="overlayImg" src="">
+</div>
+
+<!-- FINAL POPUP -->
+<div id="finalPopup" class="popup hidden">
+    <div class="popup-content">
+        <h1>Tumi Amar Shobkichu ❤️🌻</h1>
+        <p>Forever and Always 💖</p>
+        <button onclick="closePopup()">Close 💌</button>
+    </div>
+</div>
+
+<!-- INTRO SECTION -->
+<div class="intro" id="intro">
+    <h1>I Made Something Special For You 💌</h1>
+    <button onclick="enterSite()">Click To Enter ❤️</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content hidden" id="mainContent">
+
+    <!-- STATIC FIRST 3 IMAGES -->
+    <div class="memory">
+        <img src="images/img1.jpeg">
+        <img src="images/img2.jpeg">
+        <img src="images/img3.jpeg">
+    </div>
+
+    <!-- FIRST QUESTION -->
+    <section class="section">
+        <h2>Ekta jinis jigges korbo bolbi?🥺</h2>
+        <button class="yes" onclick="showSecond()">Bolbo ❤️</button>
+        <button class="no" onmouseover="moveNo(this)">Na 😜</button>
+    </section>
+
+    <!-- SECOND QUESTION -->
+    <section class="section hidden" id="second">
+        <h2>Amar sathe buri hobi?🫂</h2>
+        <button class="yes" onclick="showFinal()">Hobo ❤️</button>
+        <button class="no" onmouseover="moveNo(this)">Na 😜</button>
+    </section>
+
+    <!-- FINAL QUESTION -->
+    <section class="section hidden" id="final">
+        <h2>Sangam ❤️</h2>
+        <button class="yes" onclick="finalYes()">Forever ❤️🌻</button>
+        <button class="no" onmouseover="moveNo(this)">No 😜</button>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
